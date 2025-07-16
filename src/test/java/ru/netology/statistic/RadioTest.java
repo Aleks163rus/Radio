@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 
 
 public class RadioTest {
+    Radio radio = new Radio();
 
     // тесты переключения станций
     @Test
     public void validValu() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(5);
 
@@ -20,7 +20,6 @@ public class RadioTest {
 
     @Test
     public void upPerinvalidValue() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(15);
 
@@ -31,7 +30,6 @@ public class RadioTest {
 
     @Test
     public void lowerInvalidValue() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(-5);
 
@@ -43,7 +41,6 @@ public class RadioTest {
 
     @Test
     public void lowerBoundary() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(0);
 
@@ -54,7 +51,6 @@ public class RadioTest {
 
     @Test
     public void upperBoundary() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(9);
 
@@ -65,7 +61,6 @@ public class RadioTest {
 
     @Test
     public void belowZero() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(-1);
 
@@ -76,7 +71,6 @@ public class RadioTest {
 
     @Test
     public void aboveZero() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(1);
 
@@ -87,7 +81,6 @@ public class RadioTest {
 
     @Test
     public void belowNine() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(8);
 
@@ -98,7 +91,6 @@ public class RadioTest {
 
     @Test
     public void aboveNine() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(10);
 
@@ -109,7 +101,6 @@ public class RadioTest {
 
     @Test
     public void switchingUp() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(8);
         radio.next();
@@ -122,7 +113,6 @@ public class RadioTest {
 
     @Test
     public void switchingDown() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(1);
 
@@ -136,7 +126,6 @@ public class RadioTest {
 
     @Test
     public void switchingUp_9() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(9);
         radio.next();
@@ -148,7 +137,6 @@ public class RadioTest {
 
     @Test
     public void switchingDown_0() {
-        Radio radio = new Radio();
 
         radio.setCurrentStation(0);
 
@@ -160,12 +148,12 @@ public class RadioTest {
     }
 /// ///////////////////////////////////////////////////////////////////////////////////
     // тесты переключени звука
-/// //////////////////////////////////////////////////////////////////////////////////
+
+    /// //////////////////////////////////////////////////////////////////////////////////
 
 
     @Test
     public void validValuVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(15);
 
@@ -176,7 +164,6 @@ public class RadioTest {
 
     @Test
     public void upperInvalidValueVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(115);
 
@@ -187,7 +174,6 @@ public class RadioTest {
 
     @Test
     public void lowerInvalidValueVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(-15);
 
@@ -198,7 +184,6 @@ public class RadioTest {
 
     @Test
     public void lowerBoundaryVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
 
@@ -209,7 +194,6 @@ public class RadioTest {
 
     @Test
     public void upperBoundaryVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
 
@@ -220,8 +204,6 @@ public class RadioTest {
 
     @Test
     public void belowZeroVolume() {
-        Radio radio = new Radio();
-
         radio.setCurrentVolume(-1);
 
         int expected = 0;
@@ -231,7 +213,6 @@ public class RadioTest {
 
     @Test
     public void aboveZeroVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
 
@@ -242,7 +223,6 @@ public class RadioTest {
 
     @Test
     public void belowHundredVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
 
@@ -253,7 +233,6 @@ public class RadioTest {
 
     @Test
     public void aboveHundredVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(101);
 
@@ -264,7 +243,6 @@ public class RadioTest {
 
     @Test
     public void IncreaseVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(99);
         radio.increase();
@@ -277,7 +255,6 @@ public class RadioTest {
 
     @Test
     public void downVolume() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(1);
 
@@ -291,7 +268,6 @@ public class RadioTest {
 
     @Test
     public void IncreaseVolume_100() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(100);
         radio.increase();
@@ -303,7 +279,6 @@ public class RadioTest {
 
     @Test
     public void downVolume_0() {
-        Radio radio = new Radio();
 
         radio.setCurrentVolume(0);
 
@@ -315,4 +290,4 @@ public class RadioTest {
     }
 
 
-}
+}}
