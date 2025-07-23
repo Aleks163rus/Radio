@@ -25,9 +25,6 @@ public class Radio {
     }
 // переключение каналов 0-9
 
-    public int getCurrentStation() {
-        return currentStation;
-    }
 
     public void setCurrentStation(int currentStation) {
         if (currentStation < minStation) {
@@ -57,9 +54,6 @@ public class Radio {
 
     // переключение звука 0-100
 
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
 
     public void setCurrentVolume(int currentVolume) {
         if (currentVolume < minVolume) {
